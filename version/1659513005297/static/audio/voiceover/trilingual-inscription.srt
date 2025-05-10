@@ -1,0 +1,31 @@
+1
+00:00:00,004 --> 00:00:03,815
+subtitles.trilingual.first
+
+2
+00:00:03,911 --> 00:00:08,611
+subtitles.trilingual.second
+
+3
+00:00:08,921 --> 00:00:12,719
+subtitles.trilingual.third
+
+4
+00:00:13,033 --> 00:00:19,033
+subtitles.trilingual.fourth
+
+5
+00:00:19,431 --> 00:00:24,767
+subtitles.trilingual.fifth
+
+6
+00:00:24,879 --> 00:00:28,615
+subtitles.trilingual.sixth
+
+7
+00:00:28,700 --> 00:00:33,692
+subtitles.trilingual.seventh
+
+8
+00:00:33,822 --> 00:00:36,027
+subtitles.trilingual.eighth
