@@ -18004,9 +18004,9 @@
         variables: {
             [S.LOCALE_ENABLED]: !0,
             [S.LOCALE_ROUTING_ENABLED]: !1,
-            [S.VERSIONED_STATIC_ROOT]: (window.webpackPublicPath || "/persepolis.getty.edu/") + "version/1659513005297/static/",
-            [S.STATIC_ROOT]: (window.webpackPublicPath || "/persepolis.getty.edu/") + "",
-            [S.PUBLIC_PATH]: window.webpackPublicPath || "/persepolis.getty.edu/"
+            [S.VERSIONED_STATIC_ROOT]: (window.webpackPublicPath || "") + "version/1659513005297/static/",
+            [S.STATIC_ROOT]: (window.webpackPublicPath || "") + "",
+            [S.PUBLIC_PATH]: window.webpackPublicPath || ""
         },
         urls: {
             [O.API]: "/api/"
