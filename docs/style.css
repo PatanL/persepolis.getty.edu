@@ -1,0 +1,144 @@
+/* Docs-specific styles that extend theme.css */
+
+/* Container layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Content container */
+.content-container {
+  max-width: 900px;
+  margin: 4rem auto 6rem;
+  padding: 3rem;
+}
+
+/* Logo */
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-right: 2rem;
+}
+
+/* Navigation */
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav nav {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Secondary buttons */
+.btn-secondary {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.1);
+  color: var(--text-100);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  margin-top: 1rem;
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-2px);
+}
+
+/* Code blocks */
+pre {
+  background: rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+code {
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: var(--text-80);
+}
+
+/* Footer */
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: var(--text-60);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--text-100);
+}
+
+/* Content styling */
+.content-container h2 {
+  color: var(--text-100);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-container h3 {
+  color: var(--text-100);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.content-container p {
+  margin-bottom: 1.25rem;
+}
+
+.content-container ul,
+.content-container ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.content-container li {
+  margin-bottom: 0.5rem;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .content-container {
+    padding: 2rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .site-nav nav {
+    gap: 1rem;
+  }
+}

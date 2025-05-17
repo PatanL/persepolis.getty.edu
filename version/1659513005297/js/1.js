@@ -38,7 +38,7 @@
         "On-chain empires rise and fall in months, not millennia.",
         "Amid this shifting terrain Dareia AI was forged — a neural oracle for DeFi.",
         "Step inside the Strategos Palace and craft the future of on-chain finance.",
-        "presents"
+        "presents Dareia"
       ],
       "name": "Dareia",
       "nameSuffix": "AI Strategos",

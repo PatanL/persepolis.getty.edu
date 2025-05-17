@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dareia AI Blog - Latest news, insights and DeFi strategy trends">
+  
+  <title>Dareia AI Blog</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Critical CSS Inline -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+    :root{
+      --brand:#5865F2;
+      --bg-1:#0E0F16;
+      --bg-2:#0B0C12;
+      --text-100:#fff;
+      --text-80:#d0d3e0;
+      --text-60:#979cab;
+      --surface-bg:rgba(255,255,255,.06);
+      --surface-border:rgba(255,255,255,.08);
+      --radius:12px;
+      --transition:all .25s cubic-bezier(.4,.14,.3,1);
+    }
+    html,body{margin:0;height:100%;color:var(--text-80);font-family:'Inter',sans-serif;background:var(--bg-1);}
+    body::before{
+      content:"";position:fixed;inset:0;
+      background:radial-gradient(600px at 20% 10%,rgba(85,104,255,.25),transparent 70%),
+                radial-gradient(800px at 90% 90%,rgba(144,66,255,.15),transparent 80%);
+      pointer-events:none;
+      z-index:-2;
+    }
+    canvas#noise-bg{position:fixed;inset:0;z-index:-1;pointer-events:none}
+    .surface{
+      background:var(--surface-bg);
+      border:1px solid var(--surface-border);
+      border-radius:var(--radius);
+      backdrop-filter:blur(12px);
+      -webkit-backdrop-filter:blur(12px);
+    }
+  </style>
+  
+  <!-- Full Theme CSS -->
+  <link rel="stylesheet" href="../theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="noise-bg"></canvas>
+  
+  <header class="site-nav">
+    <a href="/" class="logo">Dareia AI</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/docs/">Documentation</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+    </nav>
+  </header>
+
+  <section class="hero slim">
+    <h1>Dareia AI Blog</h1>
+    <p>Engineering stories & DeFi strategy insights</p>
+  </section>
+
+  <div class="container">
+    <!-- Coming Soon Card (for when no blog posts exist yet) -->
+    <div class="coming-soon-card surface">
+      <h2>Coming Soon</h2>
+      <p>Our team is working on insightful content about decentralized finance, AI-driven trading strategies, and the future of algorithmic investing. Subscribe to be notified when we publish our first articles.</p>
+      
+      <form class="email-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing! We\'ll notify you when new content is available.');">
+        <input type="email" class="email-input" placeholder="Your email address" required>
+        <button type="submit" class="submit-button">Subscribe</button>
+      </form>
+    </div>
+    
+    <!-- Example Post Cards (commented out for now, uncomment when posts are available) -->
+    <!--
+    <section class="posts-grid">
+      <a href="/blog/posts/introduction-to-defi-strategies.html" class="post-card surface">
+        <img src="/blog/images/defi-strategies.jpg" alt="DeFi Strategies" class="post-card-image">
+        <div class="post-card-content">
+          <span class="post-tag">Strategy</span>
+          <h3 class="post-title">Introduction to DeFi Yield Strategies</h3>
+          <p class="post-excerpt">Learn the fundamentals of yield farming, liquidity provision, and how to evaluate risk-adjusted returns in DeFi.</p>
+          <span class="post-date">May 15, 2024</span>
+        </div>
+      </a>
+      
+      <a href="/blog/posts/ai-in-crypto-trading.html" class="post-card surface">
+        <img src="/blog/images/ai-trading.jpg" alt="AI in Crypto Trading" class="post-card-image">
+        <div class="post-card-content">
+          <span class="post-tag">Technology</span>
+          <h3 class="post-title">How AI is Transforming Crypto Trading</h3>
+          <p class="post-excerpt">Explore how machine learning algorithms are being used to identify patterns and generate alpha in volatile crypto markets.</p>
+          <span class="post-date">May 10, 2024</span>
+        </div>
+      </a>
+      
+      <a href="/blog/posts/institutional-adoption.html" class="post-card surface">
+        <img src="/blog/images/institutional.jpg" alt="Institutional Adoption" class="post-card-image">
+        <div class="post-card-content">
+          <span class="post-tag">Industry</span>
+          <h3 class="post-title">The State of Institutional DeFi Adoption</h3>
+          <p class="post-excerpt">An analysis of how traditional financial institutions are cautiously entering the DeFi space and what barriers remain.</p>
+          <span class="post-date">May 5, 2024</span>
+        </div>
+      </a>
+    </section>
+    -->
+  </div>
+
+  <footer class="site-footer surface">
+    <div class="footer-content">
+      <p>&copy; 2024 Dareia AI. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+        <a href="https://github.com/dareia-ai">GitHub</a>
+        <a href="https://twitter.com/dareia_ai">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../noise.js" defer></script>
+  
+  <!-- Optional JS for future functionality -->
+  <script>
+    // This function could be used to dynamically load blog posts from an API or JSON file
+    function loadBlogPosts() {
+      // Implementation would go here when posts are available
+    }
+  </script>
+</body>
+</html>

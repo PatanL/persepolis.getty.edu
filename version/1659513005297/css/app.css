@@ -3445,11 +3445,12 @@ html[lang=hi] .title-1rWsb04[data-chapter="6"] {
 }
 
 .persepolis-logo {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: max(60px, calc(50px + 1.5625vw))
+    width: max(60px, calc(50px + 1.5625vw)) */
+    display: none !important;
 }
 
 .navigation-13_muhw {
@@ -3600,10 +3601,11 @@ html[dir=rtl] .label-2Hy-hBF {
         display: block
     }
     .persepolis-logo {
-        position: relative;
+        /* position: relative;
         top: inherit;
         left: inherit;
-        transform: inherit
+        transform: inherit */
+        display: none !important;
     }
 }
 

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dareia AI Documentation - Mission, Roadmap, API Reference and Technical Guides">
+  
+  <title>Dareia AI Documentation</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Critical CSS Inline -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+    :root{
+      --brand:#5865F2;
+      --bg-1:#0E0F16;
+      --bg-2:#0B0C12;
+      --text-100:#fff;
+      --text-80:#d0d3e0;
+      --text-60:#979cab;
+      --surface-bg:rgba(255,255,255,.06);
+      --surface-border:rgba(255,255,255,.08);
+      --radius:12px;
+      --transition:all .25s cubic-bezier(.4,.14,.3,1);
+    }
+    html,body{margin:0;height:100%;color:var(--text-80);font-family:'Inter',sans-serif;background:var(--bg-1);}
+    body::before{
+      content:"";position:fixed;inset:0;
+      background:radial-gradient(600px at 20% 10%,rgba(85,104,255,.25),transparent 70%),
+                radial-gradient(800px at 90% 90%,rgba(144,66,255,.15),transparent 80%);
+      pointer-events:none;
+      z-index:-2;
+    }
+    canvas#noise-bg{position:fixed;inset:0;z-index:-1;pointer-events:none}
+    .surface{
+      background:var(--surface-bg);
+      border:1px solid var(--surface-border);
+      border-radius:var(--radius);
+      backdrop-filter:blur(12px);
+      -webkit-backdrop-filter:blur(12px);
+    }
+  </style>
+  
+  <!-- Full Theme CSS -->
+  <link rel="stylesheet" href="../theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="noise-bg"></canvas>
+  
+  <header class="site-nav">
+    <a href="/" class="logo">Dareia AI</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/docs/" aria-current="page">Documentation</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner surface">
+      <h1>Dareia AI Docs</h1>
+      <p>Mission • Roadmap • API Reference</p>
+      <a class="btn-primary" href="#start">Get Started</a>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="quick-links grid-3">
+      <a href="#quickstart" class="card surface">
+        <h3>🚀 Quickstart</h3>
+        <p>Get up and running with Dareia AI in under five minutes with our step-by-step guide.</p>
+        <span class="btn-secondary">View Guide</span>
+      </a>
+      
+      <a href="#api" class="card surface">
+        <h3>📘 API Reference</h3>
+        <p>Comprehensive documentation of our REST API endpoints, parameters and response formats.</p>
+        <span class="btn-secondary">Explore API</span>
+      </a>
+      
+      <a href="#cli" class="card surface">
+        <h3>⌨️ CLI Reference</h3>
+        <p>Command-line tools for automated deployments and integration with your workflow.</p>
+        <span class="btn-secondary">CLI Docs</span>
+      </a>
+    </section>
+
+    <main id="start" class="surface content-container">
+      <h2>North‑Star Mission</h2>
+      <p>"Democratize institutional‑grade DeFi strategy and risk analytics"<br>
+      Build the world's most advanced AI‑driven platform so that anyone—from retail power‑users to
+      hedge funds and corporates—can design, simulate, monitor, and execute on‑chain strategies
+      with confidence.</p>
+
+      <h2>5‑Year Roadmap</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Phase</th>
+            <th>Goal</th>
+            <th>Key Initiatives</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1. Product‑Market Fit</td>
+            <td>1,000 power users; $1–2 M ARR</td>
+            <td>
+              <ul>
+                <li>Launch Strategy Simulator MVP</li>
+                <li>Add 3–4 flagship DeFi modules (Yield‑farm, Leverage, Liquid‑Stake)</li>
+                <li>Tiered SaaS pricing (Retail, Pro, Institutional)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>2. Scale &amp; Ecosystem</td>
+            <td>$10–20 M ARR; 10 K users</td>
+            <td>
+              <ul>
+                <li>API &amp; white‑label SDK for partners and DAOs</li>
+                <li>Community "Strategy Marketplace" with revenue share</li>
+                <li>Integrations with 10+ chains &amp; 20+ DEXs/Lending platforms</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>3. Institutional‑Grade</td>
+            <td>$50–80 M ARR; 100+ enterprise clients</td>
+            <td>
+              <ul>
+                <li>On‑premises &amp; private‑cloud deployments</li>
+                <li>Advanced compliance, audit logs, portfolio‑wide risk dashboards</li>
+                <li>"Dareia Vault": multi‑sig treasury automation</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>4. Platform &amp; Network</td>
+            <td>$100 M+ ARR; central hub of DeFi analytics</td>
+            <td>
+              <ul>
+                <li>Tokenize performance: "Strategy NFTs" that yield carry to creators</li>
+                <li>On‑chain settlement and portfolio rebalances via smart‑order‑routers</li>
+                <li>Ecosystem grants &amp; developer fund to drive plug‑ins</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>5. Global Financial OS</td>
+            <td>$200–500 M ARR; $1 B+ valuation</td>
+            <td>
+              <ul>
+                <li>Expand beyond DeFi: wrap CeFi, TradFi analytics (forex, equities) into a unified dashboard</li>
+                <li>M&A / strategic partnerships with custodians, exchanges, asset managers</li>
+                <li>IPO or strategic SPAC acquisition</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Business Model Evolution</h2>
+      <ol>
+        <li>SaaS Subscriptions
+          <ul>
+            <li>Freemium / Retail tier → $0–$49 pm</li>
+            <li>Power‑User tier → $199–$499 pm</li>
+            <li>Enterprise tier → custom pricing (volume, SLAs, dedicated support)</li>
+          </ul>
+        </li>
+        <li>Revenue‑Share &amp; Marketplace
+          <ul>
+            <li>10–20 % take‑rate on "Strategy NFT" sales &amp; performance fees</li>
+            <li>Listing fees for audited strategies</li>
+          </ul>
+        </li>
+        <li>Data &amp; API Licensing
+          <ul>
+            <li>Bulk historical on‑chain data exports</li>
+            <li>Real‑time signal feeds (e.g. "live liquidation risk index")</li>
+          </ul>
+        </li>
+        <li>Professional Services
+          <ul>
+            <li>Custom backtests &amp; risk audits for funds</li>
+            <li>Co‑development of bespoke alpha‑generation modules</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h2>Strategy for Hitting $100 M–$1 B</h2>
+      <ul>
+        <li><strong>Network Effects:</strong> Encourage users to publish &amp; monetize their "recipes." DAO governance over community‑built modules.</li>
+        <li><strong>Stickiness:</strong> Auto‑rebalance "Set‑and‑Forget" strategies with on‑chain execution. Alerts + on‑chain workflows tie clients in.</li>
+        <li><strong>Defensibility:</strong> Proprietary ML models trained on petabytes of on‑chain data. Deep compliance &amp; institutional audit trails.</li>
+        <li><strong>Expansion:</strong> Build SDKs so VCs, auditor firms, and big exchanges embed Dareia under their own brands.</li>
+        <li><strong>Capital Efficiency:</strong> Lean cloud infrastructure; partner with blockchain‑native infra providers for co‑marketing.</li>
+      </ul>
+
+      <h2 id="quickstart">Quickstart Guide</h2>
+      <p>Getting started with Dareia AI is simple. Follow these steps to deploy your first strategy:</p>
+      
+      <pre><code># Install the Dareia CLI
+npm install -g dareia-cli
+
+# Authenticate
+dareia auth login
+
+# Create a new strategy
+dareia strategy create --name="My First Strategy"
+
+# Deploy your strategy
+dareia deploy</code></pre>
+      
+      <h2 id="api">API Reference</h2>
+      <p>Our REST API provides programmatic access to all Dareia AI features. Full documentation is available below:</p>
+      
+      <h3>Authentication</h3>
+      <pre><code>POST /api/v1/auth/token
+Content-Type: application/json
+
+{
+  "api_key": "your_api_key",
+  "api_secret": "your_api_secret"
+}</code></pre>
+      
+      <h3>Creating a Strategy</h3>
+      <pre><code>POST /api/v1/strategies
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{
+  "name": "My Strategy",
+  "description": "A simple momentum strategy",
+  "parameters": {
+    "timeframe": "1h",
+    "lookback_period": 14,
+    "threshold": 0.5
+  }
+}</code></pre>
+      
+      <h2 id="cli">CLI Reference</h2>
+      <p>The Dareia CLI provides a powerful interface for managing your strategies from the command line.</p>
+      
+      <h3>Basic Commands</h3>
+      <pre><code>dareia --help                  # Display help information
+dareia auth login              # Authenticate with your account
+dareia strategy list           # List all your strategies
+dareia strategy create         # Create a new strategy
+dareia strategy deploy [id]    # Deploy a strategy
+dareia logs [id]               # View strategy execution logs</code></pre>
+    </main>
+  </div>
+
+  <footer class="site-footer surface">
+    <div class="footer-content">
+      <p>&copy; 2024 Dareia AI. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+        <a href="https://github.com/dareia-ai">GitHub</a>
+        <a href="https://twitter.com/dareia_ai">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../noise.js" defer></script>
+</body>
+</html>

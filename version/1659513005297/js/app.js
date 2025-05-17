@@ -16881,7 +16881,7 @@
                 attrs: {
                     link: {
                         type: t.LinkType.EXTERNAL_BLANK,
-                        target: "https://twitter.com/intent/tweet?url=" + t.link
+                        target: "x.com/DareiaAI" 
                     },
                     type: t.ButtonType.LINK,
                     icon: "twitter"
