@@ -44,7 +44,7 @@
       "nameSuffix": "AI Strategos",
       "startCallToAction": "Enter",
       "scrollVideoCopy": [
-        "Block 0 was cast in 2015, birthing Ethereum — the marble foundation of modern DeFi.",
+        "Block 0 was cast in 2015 — the marble foundation of modern DeFi.",
         "Since then, protocols have sprawled like citadels across many chains.",
         "Imagine you are a tactician, crossing this network‑empire to design the next great strategy …"
       ],
