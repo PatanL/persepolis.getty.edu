@@ -681,8 +681,8 @@
             "label": "Sign up for beta",
             "href": "https://app.dareia.ai"
           },
-          "third": { "label": "Read our blog", "href": "https://blog.dareia.ai" },
-          "fourth": { "label": "Join our Discord", "href": "https://discord.gg/dareia" }
+          "third": { "label": " ", "href": " " },
+          "fourth": { "label": " ", "href": " " }
         }
       },
       "curated": {

@@ -16868,7 +16868,7 @@
                 attrs: {
                     link: {
                         type: t.LinkType.EXTERNAL_BLANK,
-                        target: "https://www.facebook.com/sharer/sharer.php?u=" + t.link
+                        target: "" + t.link
                     },
                     type: t.ButtonType.LINK,
                     icon: "facebook"
